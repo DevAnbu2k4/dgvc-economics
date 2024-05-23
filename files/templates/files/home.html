@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>DGVC ECONOMICS</title>
+</head>
+<body>
+   <div class="container">
+       <h1 class="heading">Welcome to DGVC Economics</h1>
+       
+        <div class="content">
+            <ul>
+                {% for su in sub %}
+                <li>
+                    <a href="{{ su.sub_name }}" class="subject">{{ su.sub_name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+   </div>
+</body>
+</html>
