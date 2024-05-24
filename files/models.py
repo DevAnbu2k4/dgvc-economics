@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class pdf(models.Model):
     name = models.CharField(max_length=100)
-    text = models.FileField(upload_to='media')
+    text = models.FileField(upload_to='pdfs/')
 
 class subject(models.Model):
     sub_name = models.CharField(max_length=100)
