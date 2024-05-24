@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render
 from .models import subject, pdf
 from django.http import HttpResponse
